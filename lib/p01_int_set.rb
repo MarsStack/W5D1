@@ -6,7 +6,8 @@ class MaxIntSet
 
   def insert(num)
     
-    if num.between?(0, @store.length)
+    #num.between?(0, @store.length)
+    if num > 0 && num < @store.length && !@store.include?(num)
       @store[num] = true 
     else 
       raise "Out of bounds"
@@ -15,7 +16,7 @@ class MaxIntSet
   end
 
   def remove(num)
-  
+    @store[num] = false
   end
 
   def include?(num)
