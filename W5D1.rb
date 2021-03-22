@@ -3,5 +3,5 @@ class MaxIntSet
         @store = Array.new(max)
     end
 
-    #helloword
+    
 end 
